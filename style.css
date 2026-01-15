@@ -1,0 +1,164 @@
+body {
+    margin: 35px;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(243, 213, 235);
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; 
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+}
+#naslov {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#buzdovani{
+    background-color: #f0f8ff;
+    border: 5px solid black;
+}
+#buzdovani h2 {
+    text-align: center;
+    color: black;
+}
+#buzdovani p {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#slika1{
+    width: 200px;
+    height: auto;
+    transition: width 2s;
+}
+#slikice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+#rucak {
+    background-color: #f5fff0;
+    text-align: center;  
+    border:5px solid #000000;
+}
+#rucak h2{
+    text-align: center;
+    color: #000000;
+} 
+#rucak p{
+    margin-left: 200px;
+    margin-right: 200px;}
+
+#uputa{color: brown;
+text-decoration: double;}
+
+#portret {
+    background-color: #fff8f0;
+    text-align: center;
+    border: 5px solid black;
+}
+#portret h1{
+    text-align: center;
+}
+#portret p{
+    margin-left: 200px;
+    margin-right: 200px;}
+#natjecanje { 
+    background-color: #dcfce0;
+    border: 5px solid black;
+}
+#patnja{
+    background-color: #e8dcfc;
+    border: 5px solid black;
+}
+#riba{
+    background-color: #fcdcf9;
+    border: 5px solid black
+}
+h1:hover, h1:active{
+    color: crimson;
+   background: #dcfce0;
+}
+#slika1:hover{
+    width: 300px;
+    height: auto;
+}
+input:focus{
+    background-color: honeydew;
+}
+#forma{
+    background-color: rgb(237, 245, 201);
+    transform: rotate(25deg);
+    width: 150px;
+    height: 80px;
+}
+@keyframes puls {
+  0%   { transform: scale(1);   opacity: 0.6; }
+  50%  { transform: scale(1.10); opacity: 1;   }
+  100% { transform: scale(1);   opacity: 0.6; }
+}
+
+@keyframes klizanje {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+#tema .okvir.puls {
+  padding: 20px;
+  border: 2px solid black;
+  animation: puls 2s ease-in-out infinite;
+  color: rgb(38, 118, 230);
+  background: #dcfce0;
+}
+
+#tema .okvir.puls > h2 {
+  margin-bottom: 12px;
+}
+
+.kartice .kartica:nth-child(2) {
+  animation: klizanje 3s ease forwards;
+  animation-delay: 2s;
+}
+
+.kartice article:nth-of-type(1) {
+  animation: klizanje 2s ease forwards;
+  animation-delay: 02s;
+}
+.kartice :nth-of-type(3){
+    animation: klizanje 1s ease forwards;
+    animation-delay: 03s
+}
+button.akcija:hover + .poruka {
+  opacity: 1;
+  animation: klizanje 0.2s ease forwards;
+}
+button.akcija:hover ~ .kartice .kartica {
+  animation: puls 1s ease-in-out infinite;
+}
+.kartica {
+  display: inline-block;
+  margin: 6px;
+  padding: 10px 14px;
+  background: #927aff;
+  opacity: 0;
+}
+.poruka {
+  opacity: 0;
+  margin-top: 10px;
+}
+
+
+
+
